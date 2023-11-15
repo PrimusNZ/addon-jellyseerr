@@ -1,6 +1,6 @@
 {
   "name": "Jellyseerr",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "slug": "Jellyseerr",
   "legacy": false,
   "init": false,
@@ -13,10 +13,10 @@
     "armhf"
   ],
   "ports": {
-    "7575/tcp": 7575
+    "5055/tcp": 5055
   },
   "ports_description": {
-    "7575/tcp": "web interface"
+    "5055/tcp": "web interface"
   },
   "map": [
     "share:rw",
