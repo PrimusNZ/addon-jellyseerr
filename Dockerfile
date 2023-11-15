@@ -3,6 +3,6 @@ ARG BUILD_FROM
 FROM $BUILD_FROM
 
 # copy local files
-COPY run.sh ./app/run.sh
+COPY run.sh /app/run.sh
 
 CMD [ "run.sh" ]
