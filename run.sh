@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd /app
+
 if [ ! -d /share/jellyseerr/config ]; then
     mkdir -p /share/jellyseerr/config
 fi

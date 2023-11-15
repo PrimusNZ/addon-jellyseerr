@@ -5,4 +5,4 @@ FROM $BUILD_FROM
 # copy local files
 COPY run.sh /app/run.sh
 
-CMD [ "run.sh" ]
+CMD [ "/app/run.sh" ]
