@@ -1,0 +1,13 @@
+{
+    "build_from_template": {
+        "image": "ghcr.io/ajnart/homarr",
+        "version": "latest"
+    },
+    "build_from": {
+        "armhf": "fallenbagel/jellyseerr:latest",
+        "aarch64": "fallenbagel/jellyseerr:latest",
+        "amd64": "fallenbagel/jellyseerr:latest"
+    },
+    "squash": false,
+    "args": {}
+}

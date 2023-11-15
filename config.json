@@ -1,0 +1,34 @@
+{
+  "name": "Jellyseerr",
+  "version": "0.1.1",
+  "slug": "Jellyseerr",
+  "legacy": false,
+  "init": false,
+  "description": "Jellyseerr is a free and open source fork of Overseerr for managing requests for your media library. It integrates with your existing services, such as Sonarr, Radarr, and Jellyfin",
+  "url": "https://github.com/PrimusNZ/addon-jellyseerr",
+  "startup": "services",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf"
+  ],
+  "ports": {
+    "7575/tcp": 7575
+  },
+  "ports_description": {
+    "7575/tcp": "web interface"
+  },
+  "map": [
+    "share:rw",
+    "media:rw",
+    "ssl"
+  ],
+  "webui": "http://[HOST]:[PORT:8989]",
+  "boot": "auto",
+  "backup_exclude": [
+    "**/Backups/*",
+    "**/logs/*",
+    "**/MediaCover/*"
+  ],
+  "image": "ghcr.io/primusnz/hassio-addons/{arch}-jellyseerr"
+}
